@@ -25,4 +25,6 @@ we need now for project 2 3 Plugins
     A plugin for the Hokuyo lidar sensor.
     A plugin for the wheel joints actuator.
 
-3.
+3.ALl plugins add in .gazebo file and place this file under /urdf folder
+
+4.
