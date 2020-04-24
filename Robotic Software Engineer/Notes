@@ -1,0 +1,28 @@
+1.Xacro files are just sub files or modules of URDF file .Since URDF is very big we divide each modulesa
+as one xacro file to make it easy to read and implement
+
+2. Generally box ,cylinder shapes etc basic shapes are done in links and joints.
+But to get complex shapes like Lidar with good texture we go with mesh files specially designed
+
+Those files are .dae files
+
+eg:Hokyo.dae is mesh file of hokyo lidar shape to import in to xacro file 
+
+3.How we add .dae in xacro file 
+eg:geometry for <visual> - filename = “package://my_robot/meshes/hokuyo.dae”
+
+
+Gazebo Plugins
+
+1.Plugins link between sensors we added  to simulation.so that we capture data from sensors in gayebo simulation.
+
+2.But how exactly does the camera sensor takes those images in simulation?
+ How does a lidar sensor take laser measurements in simulation?
+ How exactly does your robot move in a simulated environment?
+
+we need now for project 2 3 Plugins
+    A plugin for the camera sensor.
+    A plugin for the Hokuyo lidar sensor.
+    A plugin for the wheel joints actuator.
+
+3.
