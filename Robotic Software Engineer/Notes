@@ -13,8 +13,15 @@ eg:geometry for <visual> - filename = “package://my_robot/meshes/hokuyo.dae”
 
 
 Gazebo Plugins
+https://classroom.udacity.com/nanodegrees/nd209/parts/1f349ee0-9c40-4964-a6a8-4e0818a15fde/modules/d0fbb2f2-55d1-4217-8116-a52ac989c07f/lessons/21c5607d-1627-46da-a4b7-081e8366de5a/concepts/da36a836-b5c0-457f-b545-1b3104b501d5
 
 1.Plugins link between sensors we added  to simulation.so that we capture data from sensors in gayebo simulation.
+
+    Eg:<plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+    libgazebo_ros_diff_drive.so is the shared object file created from compiling the C++ source code. 
+    The plugin accepts information specific to your robot's model, such as wheel separation, 
+    joint names, and more. Then it calculates and publishes the robot's odometry information to 
+    the topics that you specified, like odom.
 
 2.But how exactly does the camera sensor takes those images in simulation?
  How does a lidar sensor take laser measurements in simulation?
@@ -28,3 +35,8 @@ we need now for project 2 3 Plugins
 3.ALl plugins add in .gazebo file and place this file under /urdf folder
 
 4.
+
+Rviz
+
+1. RViz is a ROS package, it requires roscore. In a terminal spin up roscore:
+2.RViz is our one-stop tool to visualize all three core aspects of a robot: perception, decision-making, and actuation.
